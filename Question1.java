@@ -7,6 +7,27 @@ public class Question1 {
     // Compose a O(n) search fxn.
 
  public static String boxSearch(int[][] box, int target){
+ 	int n = box.length;
+ 	int col = box.length - 1;
+ 	int row = 0;
+ 	int current = box[row][col];
+	if (current == target){
+	    return "Target aquired: (" + row + ", " + col + ")";
+	}
+ 	for (row = 0; row < n; row++){
+ 		if (target < current){
+ 			while (current != target){
+ 				col--;
+ 				current = box[row][col];
+ 			}
+ 			return "Target aquired: (" + row + ", " + col + ")";
+ 		}
+ 		else {
+ 			row++;
+ 			current = box[row][col];
+ 		}
+ 			}
+ 		}
  }
  
  public static void main(String[] args){
