@@ -12,7 +12,7 @@ public class Question1 {
  	int row = 0;
  	int current = box[row][col];
 	if (current == target){
-	    return "Target aquired: (" + row + ", " + col + ")";
+	    return "Target " + target + " aquired at (" + row + ", " + col + ")";
 	}
  	for (row = 0; row < n; row++){
  		current = box[row][col];
@@ -21,7 +21,7 @@ public class Question1 {
  				col--;
  				current = box[row][col];
  			}
- 			return "Target aquired: (" + row + ", " + col + ")";
+ 			return "Target " + target + " aquired at (" + row + ", " + col + ")";
  		}
  	}
  	return "Number not found";
