@@ -26,8 +26,8 @@ public class Question1 {
  			row++;
  			current = box[row][col];
  		}
- 			}
- 		}
+ 	
+ 	}
  }
  
  public static void main(String[] args){
@@ -41,4 +41,6 @@ public class Question1 {
 	 System.out.println(boxSearch(matrix, 3));
 	 System.out.println(boxSearch(matrix, 20));
 	 System.out.println(boxSearch(matrix, 85));
+}
+
 }
