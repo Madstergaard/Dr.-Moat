@@ -15,20 +15,16 @@ public class Question1 {
 	    return "Target aquired: (" + row + ", " + col + ")";
 	}
  	for (row = 0; row < n; row++){
- 		if (target < current){
+ 		current = box[row][col];
+ 		if (target <= current){
  			while (current != target){
  				col--;
  				current = box[row][col];
  			}
  			return "Target aquired: (" + row + ", " + col + ")";
  		}
- 		else {
- 			row++;
- 			current = box[row][col];
- 		}
- 	
  	}
- 	return -1;
+ 	return "Number not found";
  }
  
  public static void main(String[] args){
