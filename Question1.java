@@ -26,7 +26,8 @@ public class Question1 {
  			row++;
  			current = box[row][col];
  		}
- 	}
+ 			}
+ 		}
  }
  
  public static void main(String[] args){
@@ -35,10 +36,9 @@ public class Question1 {
 	 System.out.println(boxSearch(matrix, 3));
 	 System.out.println(boxSearch(matrix, 5));
 	 System.out.println(boxSearch(matrix, 12));
-	 int[][] matrix = {{1,3,5,7}, {3,7,8,11}, {5,12,15,20}, {7,57,62,85}};
+	 matrix = {{1,3,5,7}, {3,7,8,11}, {5,12,15,20}, {7,57,62,85}};
 	 System.out.println(boxSearch(matrix, 7));
 	 System.out.println(boxSearch(matrix, 3));
 	 System.out.println(boxSearch(matrix, 20));
 	 System.out.println(boxSearch(matrix, 85));
-}
 }
