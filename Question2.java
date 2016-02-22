@@ -41,5 +41,9 @@ public class Question2 {
 	    System.out.println(findMissing(list) + " (should be 3)");
 	    int[] list2 = {1,3,1,4};
 	    System.out.println(findMissing(list2) + " (should be 2)");
+	    int[] list3 = {3,2,5,4,5};
+	    System.out.println(findMissing(list3) + " (should be 1)");
+	    int[] list4 = {1,3,4,4,7,5,2};
+	    System.out.println(findMissing(list4) + " (should be 6)");
     }
 }
