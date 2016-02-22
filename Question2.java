@@ -8,10 +8,9 @@ public class Question2 {
     
     public static String findMissing(int[] list){
     	int numToChange = list[0];
-    	int indexToChange = 0;
     	int min = list[0];
     	int minIndex = 0;
-	for (indexToChange; indexToChange < list.length; indexToChange++){
+	for (int indexToChange = 0; indexToChange < list.length; indexToChange++){
 		for (i = indexToChange; i < list.length; i++){
 			numToChange = list[i];
 			min = numToChange;
