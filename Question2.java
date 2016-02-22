@@ -25,7 +25,7 @@ public class Question2 {
 	}
 	for (int i = list.length - 1; i > -1; i--){
 		if (list[i] != (i + 1)){
-				return "The number missing is " + i + 1;
+				return "The number missing is " + (i + 1);
 			}
 	}
 	return "-1";
@@ -33,8 +33,8 @@ public class Question2 {
     
     public static void main(String[] args){
 	    int[] list = {1,2,2,4};
-	    System.out.println(findMissing(list));
+	    System.out.println(findMissing(list) + " (should be 3)");
 	    int[] list2 = {1,3,1,4};
-	    System.out.println(findMissing(list2));
+	    System.out.println(findMissing(list2) + " (should be 2)");
     }
 }
