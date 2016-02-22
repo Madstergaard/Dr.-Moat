@@ -23,7 +23,7 @@ public class Question2 {
 			list[indexToChange] = min;
 			list[minIndex] = numToChange;
 			if (min != (indexToChange + 1)){
-				return "The number missing is" + indexToChange + 1;
+				return "The number missing is " + indexToChange + 1;
 			}
 		}
 	}
