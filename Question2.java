@@ -23,6 +23,11 @@ public class Question2 {
 			list[minIndex] = numToChange;
 		}
 	}
+	String str = "";
+	for (int i = 0; i < list.length; i++){
+		str += list[i] + ", ";
+	}
+	System.out.println("[" + str + "]");
 	for (int i = list.length - 1; i > -1; i--){
 		if (list[i] != (i + 1)){
 				return "The number missing is " + (i + 1);
