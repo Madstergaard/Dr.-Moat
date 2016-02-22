@@ -11,7 +11,7 @@ public class Question2 {
     	int min = list[0];
     	int minIndex = 0;
 	for (int indexToChange = 0; indexToChange < list.length; indexToChange++){
-		for (i = indexToChange; i < list.length; i++){
+		for (int i = indexToChange; i < list.length; i++){
 			numToChange = list[i];
 			min = numToChange;
 			minIndex = indexToChange;
@@ -21,10 +21,12 @@ public class Question2 {
 			}
 			list[indexToChange] = min;
 			list[minIndex] = numToChange;
-			if (min != (indexToChange + 1)){
-				return "The number missing is " + indexToChange + 1;
-			}
 		}
+	}
+	for (int i = list.length - 1; i > -1; i--){
+		if (list[i] != (i + 1)){
+				return "The number missing is " + i + 1;
+			}
 	}
     }
     
