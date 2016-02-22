@@ -11,10 +11,10 @@ public class Question2 {
     	int min = list[0];
     	int minIndex = 0;
 	for (int indexToChange = 0; indexToChange < list.length; indexToChange++){
+		numToChange = list[indexToChange];
+		min = numToChange;
+		minIndex = indexToChange;
 		for (int i = indexToChange; i < list.length; i++){
-			numToChange = list[i];
-			min = numToChange;
-			minIndex = indexToChange;
 			if (list[i] < list[minIndex]){
 				minIndex = i;
 				min = list[minIndex];
